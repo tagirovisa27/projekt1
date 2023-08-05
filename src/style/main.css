@@ -3,43 +3,115 @@
 }
 
 .wrapper {
-   width: 20%;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr; 
-   gap: 100px 45px;
-   margin-top: 100px;
-   margin-bottom: 200px;
+    width: 80%;
+    margin-inline: auto;
 }
 
-.display_block {
-   width: 350px;
-   height: 700px;
-   border-radius: 15px;
-   background-color: rgba(244, 236, 233, 1);
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 20px;
+    color: rgba(76, 66, 68, 1);
+}
+
+.img-log {
+    width: 200px;
+}
+
+.header__nav li {
+    border-right: 2px solid;
+    color: rgba(76, 66, 68, 1);
+    padding-right: 30px;
+}
+
+.big-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 30px;
+}
+
+.big-block__min-block {
+    width: 400px;
+    height: 600px;
+    background-color: rgba(244, 236, 233, 1);
+    border-radius: 20px;
+}
+
+.big-block__min-block_two {
+    width: 400px;
+    height: 600px;
+    background-color: rgba(244, 236, 233, 1);
+    border-radius: 20px;
+}
+
+.big-block__min-block_tree {
+    width: 400px;
+    height: 600px;
+    background-color: rgba(244, 236, 233, 1);
+    border-radius: 20px;
 }
 
 .img {
-   width: 350px;
-   height: 300px;
-   border-radius: 15px;
+   width: 400px;
 }
 
-.text_heading {
-   width: 150px;
-   height: 60px;
-   line-height: 30px;
-   font-size: 22px;
-   text-align: center;
-   margin: auto;
-   padding: 30px 0px 80px 0px;
-   color: rgba(76, 66, 68, 1);
+.heading {
+  font-size: 32px;
 }
 
-.text {
-   width: 300px;
-   height: 200px;
-   text-align: center;
-   font-size: 20px;
-   margin: auto;
-   color: rgba(76, 66, 68, 1);
+.min-block__text {
+    width: 320px;
+    text-align: center;
+    font-size: 24px;
+    margin: auto;
+    color: rgba(76, 66, 68, 1);
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+      width: 1200px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__nav {
+       display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .big-block {
+        width: 992px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .big-block {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .big-block__min-block_tree {
+        display: none;
+    }
 }
