@@ -44,7 +44,7 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .wrapper-nav--mobile {
         display: flex;
         justify-content: space-between;
