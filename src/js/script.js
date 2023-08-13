@@ -1,8 +1,8 @@
 const burger = document.querySelector("#burger");
 
-const closer = document.querySelector("#close");
-
 const menu  = document.querySelector('#mob_menu');
+
+const closer = document.querySelector("#close");
 
 burger.addEventListener('click', function(){
     menu.style.left = 0
@@ -10,3 +10,11 @@ burger.addEventListener('click', function(){
 closer.addEventListener('click', function(){
     menu.style.left = "100%"
 })
+
+let a = [];
+
+for (let i = 2; i <= 1000; i += 2) {
+    a.push(i);
+}
+
+console.log();
